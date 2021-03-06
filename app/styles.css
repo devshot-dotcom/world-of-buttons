@@ -1,0 +1,79 @@
+@import './normalize.min.css';
+@import './colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+:root {
+    --base-font-size: 1rem;
+    --base-font-family: 'Lato', serif;
+    --base-font-weight: 400;
+    --bold-font-weight: 900;
+    --max-width: 800px;
+}
+
+body {
+    font-size: var(--base-font-size);
+    font-family: var(--base-font-family);
+    font-weight: var(--base-font-weight);
+    color: var(--space-cadet);
+    background-color: var(--champagne-pink);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--bold-font-weight);
+    margin: 0;
+}
+
+ main {
+     margin: auto;
+     max-width: var(--max-width);
+ }
+
+.centered {
+    display: grid;
+    place-items: center;
+}
+
+.document-title {
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+}
+
+header .link-anchor {
+    transform: translateY(.25rem);
+    display: none;
+}
+
+header .group-subtitle {
+    font-size: calc(var(--base-font-size) - .1rem);
+    color: var(--imperial-red);
+}
+
+@media(min-width: 800px) {
+    header {
+        text-align: start;
+    }
+}
+
+.button-group {
+    padding: 1rem;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+@media(min-width: 800px) {
+    .buttons-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+.button-container {
+    height: 8rem;
+}
