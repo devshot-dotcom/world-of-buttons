@@ -1,5 +1,5 @@
-@import './normalize.min.css';
-@import './colors.css';
+@import '/app/normalize.min.css';
+@import '/app/colors.css';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 
 :root {
